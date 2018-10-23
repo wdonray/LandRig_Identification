@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: ca0817c1787a7fb4a85edd7408d101ad
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 1
+    100002: 2
+    100004: 3
+    100006: 4
+    100008: Body_fence01a_reference_smd_mesh_0
+    100010: Body_fence01a_reference_smd_mesh_0_2
+    100012: Body_fence01a_reference_smd_mesh_0_3
+    100014: Body_fence01a_reference_smd_mesh_0_4
+    100016: Body_fence01a_reference_smd_mesh_1
+    100018: Body_fence01a_reference_smd_mesh_1_2
+    100020: Body_fence01a_reference_smd_mesh_1_3
+    100022: Body_fence01a_reference_smd_mesh_1_4
+    100024: CAM_1
+    100026: CAM_1_1
+    100028: CAM_1_2
+    100030: CAM_1_3
+    100032: CAM_1_4
+    100034: //RootNode
+    100036: Light
+    100038: Light_1
+    100040: Sky
+    400000: 1
+    400002: 2
+    400004: 3
+    400006: 4
+    400008: Body_fence01a_reference_smd_mesh_0
+    400010: Body_fence01a_reference_smd_mesh_0_2
+    400012: Body_fence01a_reference_smd_mesh_0_3
+    400014: Body_fence01a_reference_smd_mesh_0_4
+    400016: Body_fence01a_reference_smd_mesh_1
+    400018: Body_fence01a_reference_smd_mesh_1_2
+    400020: Body_fence01a_reference_smd_mesh_1_3
+    400022: Body_fence01a_reference_smd_mesh_1_4
+    400024: CAM_1
+    400026: CAM_1_1
+    400028: CAM_1_2
+    400030: CAM_1_3
+    400032: CAM_1_4
+    400034: //RootNode
+    400036: Light
+    400038: Light_1
+    400040: Sky
+    2000000: CAM_1
+    2000002: CAM_1_1
+    2000004: CAM_1_2
+    2000006: CAM_1_3
+    2000008: CAM_1_4
+    2100000: fence_mat01
+    2100002: fence_mat02
+    2300000: Body_fence01a_reference_smd_mesh_0
+    2300002: Body_fence01a_reference_smd_mesh_0_2
+    2300004: Body_fence01a_reference_smd_mesh_0_3
+    2300006: Body_fence01a_reference_smd_mesh_0_4
+    2300008: Body_fence01a_reference_smd_mesh_1
+    2300010: Body_fence01a_reference_smd_mesh_1_2
+    2300012: Body_fence01a_reference_smd_mesh_1_3
+    2300014: Body_fence01a_reference_smd_mesh_1_4
+    3300000: Body_fence01a_reference_smd_mesh_0
+    3300002: Body_fence01a_reference_smd_mesh_0_2
+    3300004: Body_fence01a_reference_smd_mesh_0_3
+    3300006: Body_fence01a_reference_smd_mesh_0_4
+    3300008: Body_fence01a_reference_smd_mesh_1
+    3300010: Body_fence01a_reference_smd_mesh_1_2
+    3300012: Body_fence01a_reference_smd_mesh_1_3
+    3300014: Body_fence01a_reference_smd_mesh_1_4
+    4300000: Body_fence01a_reference_smd_mesh_1
+    4300002: Body_fence01a_reference_smd_mesh_0
+    4300004: Body_fence01a_reference_smd_mesh_1_2
+    4300006: Body_fence01a_reference_smd_mesh_0_2
+    4300008: Body_fence01a_reference_smd_mesh_1_3
+    4300010: Body_fence01a_reference_smd_mesh_0_3
+    4300012: Body_fence01a_reference_smd_mesh_1_4
+    4300014: Body_fence01a_reference_smd_mesh_0_4
+    10800000: Light
+    10800002: Light_1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

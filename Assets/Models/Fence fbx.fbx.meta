@@ -78,7 +78,17 @@ ModelImporter:
     4300014: Body_fence01a_reference_smd_mesh_0_4
     10800000: Light
     10800002: Light_1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fence_mat01
+    second: {fileID: 2100000, guid: e176def2261d7c2458012d0ed1ce4669, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fence_mat02
+    second: {fileID: 2100000, guid: c775853decd2465428e3036e6795dd7b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

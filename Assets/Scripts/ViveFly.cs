@@ -5,8 +5,6 @@ public class ViveFly : MonoBehaviour
 {
     [SerializeField] Valve.VR.InteractionSystem.Player Player;
     [SerializeField] float speed = 5;
-    [SerializeField] SteamVR_TrackedController left;
-    [SerializeField] SteamVR_TrackedController right;
 
     Vector3 takeOffPoint;
     bool inFlight = false;

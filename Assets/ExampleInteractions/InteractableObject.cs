@@ -79,4 +79,9 @@ public class InteractableObject : MonoBehaviour
     {
         go.SetActive(!go.activeSelf);
     }
+
+    public void NotifySubscribers(string subscription)
+    {
+        Mouledoux.Components.Mediator.instance.NotifySubscribers(subscription, new Mouledoux.Callback.Packet());
+    }
 }

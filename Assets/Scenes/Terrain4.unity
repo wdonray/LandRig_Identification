@@ -24635,6 +24635,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: far clip plane
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000011983135080, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
@@ -24663,6 +24667,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 590407358}
   speed: 5
+--- !u!114 &590407360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 590407357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a549180270ca36d43b7f358a465831e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blindfold: {fileID: 970570724}
+  fadeTime: 1
+  delayTime: 2
+  objectRef: {fileID: 0}
+--- !u!20 &590407361 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 590407356}
 --- !u!1 &591086837
 GameObject:
   m_ObjectHideFlags: 0
@@ -28045,10 +28069,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76d42f08cd6673b4ca810c74237c88c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  setActive: 1
   m_subMessage: Zone1 Complete
   m_event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 590407360}
+        m_MethodName: StartTeleport
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1386246096}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &662413353
@@ -39906,6 +39942,132 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 466480, guid: 29bd40dd0292d86498b3e5caf4bf6eb4,
     type: 2}
   m_PrefabInternal: {fileID: 967165283}
+--- !u!1001 &970570722
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1540248436}
+    m_Modifications:
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114628534064111068, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114628534064111068, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 114628534064111068, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+        type: 2}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0ad971d3c4734d44bdef156d7c2cee1, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!224 &970570723 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224198912128740472, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+    type: 2}
+  m_PrefabInternal: {fileID: 970570722}
+--- !u!114 &970570724 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114628534064111068, guid: a0ad971d3c4734d44bdef156d7c2cee1,
+    type: 2}
+  m_PrefabInternal: {fileID: 970570722}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &971289393
 GameObject:
   m_ObjectHideFlags: 0
@@ -53195,6 +53357,7 @@ GameObject:
   - component: {fileID: 1306480568}
   - component: {fileID: 1306480567}
   - component: {fileID: 1306480570}
+  - component: {fileID: 1306480571}
   m_Layer: 0
   m_Name: Zone (6)
   m_TagString: Untagged
@@ -53285,6 +53448,57 @@ MonoBehaviour:
   Score: 0
   TargetScore: 2
   Message: Zone6 Complete
+--- !u!114 &1306480571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1306480565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76d42f08cd6673b4ca810c74237c88c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setActive: 0
+  m_subMessage: Zone5 Complete
+  m_event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1587064411}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1306480565}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 590407360}
+        m_MethodName: StartLoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Temp
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1311182695
 GameObject:
   m_ObjectHideFlags: 0
@@ -56635,6 +56849,7 @@ GameObject:
   - component: {fileID: 1386246098}
   - component: {fileID: 1386246097}
   - component: {fileID: 1386246100}
+  - component: {fileID: 1386246101}
   m_Layer: 0
   m_Name: Zone (2)
   m_TagString: Untagged
@@ -56727,6 +56942,57 @@ MonoBehaviour:
   Score: 0
   TargetScore: 4
   Message: Zone2 Complete
+--- !u!114 &1386246101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386246095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76d42f08cd6673b4ca810c74237c88c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setActive: 0
+  m_subMessage: Zone1 Complete
+  m_event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 659734462}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1386246095}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 590407360}
+        m_MethodName: StartTeleport
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1386246096}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1388746446
 Prefab:
   m_ObjectHideFlags: 0
@@ -63031,6 +63297,100 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537791540}
   m_Mesh: {fileID: 4300190, guid: defec0c6b658a274bbe96401305f7914, type: 3}
+--- !u!1 &1540248432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1540248436}
+  - component: {fileID: 1540248435}
+  - component: {fileID: 1540248434}
+  - component: {fileID: 1540248433}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1540248433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1540248432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1540248434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1540248432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1540248435
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1540248432}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 590407361}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1540248436
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1540248432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 970570723}
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1543668858
 Prefab:
   m_ObjectHideFlags: 0
@@ -64947,6 +65307,7 @@ GameObject:
   - component: {fileID: 1587064414}
   - component: {fileID: 1587064413}
   - component: {fileID: 1587064416}
+  - component: {fileID: 1587064417}
   m_Layer: 0
   m_Name: Zone (5)
   m_TagString: Untagged
@@ -65040,6 +65401,57 @@ MonoBehaviour:
   Score: 0
   TargetScore: 5
   Message: Zone5 Complete
+--- !u!114 &1587064417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1587064411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76d42f08cd6673b4ca810c74237c88c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setActive: 0
+  m_subMessage: Zone4 Complete
+  m_event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1628988552}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1587064411}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 590407360}
+        m_MethodName: StartTeleport
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1587064412}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1587176508
 GameObject:
   m_ObjectHideFlags: 0
@@ -66447,6 +66859,7 @@ GameObject:
   - component: {fileID: 1628988555}
   - component: {fileID: 1628988554}
   - component: {fileID: 1628988557}
+  - component: {fileID: 1628988558}
   m_Layer: 0
   m_Name: Zone (4)
   m_TagString: Untagged
@@ -66539,6 +66952,57 @@ MonoBehaviour:
   Score: 0
   TargetScore: 4
   Message: Zone4 Complete
+--- !u!114 &1628988558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1628988552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76d42f08cd6673b4ca810c74237c88c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setActive: 0
+  m_subMessage: Zone3 Complete
+  m_event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1706374699}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1628988552}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 590407360}
+        m_MethodName: StartTeleport
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1628988553}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1631304100
 Prefab:
   m_ObjectHideFlags: 0
@@ -69925,6 +70389,7 @@ GameObject:
   - component: {fileID: 1706374702}
   - component: {fileID: 1706374701}
   - component: {fileID: 1706374704}
+  - component: {fileID: 1706374705}
   m_Layer: 0
   m_Name: Zone (3)
   m_TagString: Untagged
@@ -70017,6 +70482,57 @@ MonoBehaviour:
   Score: 0
   TargetScore: 4
   Message: Zone3 Complete
+--- !u!114 &1706374705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706374699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76d42f08cd6673b4ca810c74237c88c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setActive: 0
+  m_subMessage: Zone2 Complete
+  m_event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1386246095}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1706374699}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 590407360}
+        m_MethodName: StartTeleport
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1706374700}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1706986384
 GameObject:
   m_ObjectHideFlags: 0

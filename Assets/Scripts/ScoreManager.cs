@@ -6,7 +6,6 @@ using Valve.VR.InteractionSystem;
 
 public class ScoreManager : MonoBehaviour
 {
-    private GameObject _player;
     public int Score, TargetScore;
     public string Message;
     private Mediator.Subscriptions _subscriptions;
@@ -14,8 +13,6 @@ public class ScoreManager : MonoBehaviour
 
     private void Awake()
     {
-        _player = FindObjectOfType<Player>().gameObject;
-        TeleportPlayer(transform);
         _subscriptions = new Mediator.Subscriptions();
         _incrementScoreCallback += IncrementScore;
         _subscriptions.Subscribe(gameObject.name, _incrementScoreCallback);
@@ -30,7 +27,6 @@ public class ScoreManager : MonoBehaviour
         ResetScore();
         yield return new WaitUntil(() => GetScore() >= TargetScore);
         Mediator.instance.NotifySubscribers(Message, new Packet());
-        //Go to next zone
     }
 
     /// <summary>
@@ -71,15 +67,6 @@ public class ScoreManager : MonoBehaviour
     public void IncrementScore(Packet emptyPacket)
     {
         Score++;
-    }
-
-    /// <summary>
-    ///     Change Player Position
-    /// </summary>
-    /// <param name="target"></param>
-    private void TeleportPlayer(Transform target)
-    {
-        _player.transform.position = target.position;
     }
 
     private void OnDestroy()

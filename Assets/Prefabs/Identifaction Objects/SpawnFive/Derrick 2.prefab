@@ -110,9 +110,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1208709484726560}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: -0.49999997}
-  m_LocalPosition: {x: -1.9044036, y: 1.9660285, z: -11.187746}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -1.7763568e-15, y: -0.7071067, z: 0.000000032912105, w: -0.7071069}
+  m_LocalPosition: {x: 0.1577251, y: 0.20968723, z: 1.9142833}
+  m_LocalScale: {x: 0.50000006, y: 0.50000006, z: 0.5000001}
   m_Children:
   - {fileID: 4797504705464332}
   m_Father: {fileID: 0}
@@ -278,7 +278,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_onInteract:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: BroadcastMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Zone (5)
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_offInteract:

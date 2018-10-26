@@ -84,4 +84,9 @@ public class InteractableObject : MonoBehaviour
     {
         Mouledoux.Components.Mediator.instance.NotifySubscribers(subscription, new Mouledoux.Callback.Packet());
     }
+
+    private void OnDestroy()
+    {
+        m_subscriptions.UnsubscribeAll();
+    }
 }

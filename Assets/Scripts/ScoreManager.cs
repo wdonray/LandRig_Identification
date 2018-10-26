@@ -14,6 +14,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Awake()
     {
+        print(gameObject.name + " turned on");
         _targetScore = transform.childCount;
         _subscriptions = new Mediator.Subscriptions();
         _incrementScoreCallback += IncrementScore;
@@ -27,7 +28,7 @@ public class ScoreManager : MonoBehaviour
     private IEnumerator Start()
     {
         ResetScore();
-        yield return new WaitUntil(() => GetScore() >= _targetScore);
+        yield return new WaitUntil(CheckScore);
         Mediator.instance.NotifySubscribers(Message, new Packet());
     }
 
@@ -68,7 +69,22 @@ public class ScoreManager : MonoBehaviour
 
     public void IncrementScore(Packet emptyPacket)
     {
+        print("Score Incremented");
+        //Correct Object
+        //TODO: Play Audio Here
         _score++;
+    }
+
+    public bool CheckScore()
+    {
+        if (GetScore() >= _targetScore)
+        {
+           print("TargetScore Reached");
+            //Completed
+            //TODO: Play Audio Here
+            return true;
+        }
+        return false;
     }
 
     private void OnDestroy()

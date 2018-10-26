@@ -48,6 +48,7 @@ public class ForceTeleport : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
         StartCoroutine(FadeInOut());
         yield return new WaitForSeconds(.1f);
+        pos.gameObject.SetActive(true);
         objectRef.transform.position = pos.position;
         objectRef.transform.rotation = pos.rotation;
     }

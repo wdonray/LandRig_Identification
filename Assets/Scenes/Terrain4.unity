@@ -7208,6 +7208,11 @@ Prefab:
       propertyPath: m_onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 64003476699691350, guid: 9d40c39d32136c24e82ca743d97b4464,
+        type: 2}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d40c39d32136c24e82ca743d97b4464, type: 2}
   m_IsPrefabAsset: 0
@@ -12334,7 +12339,7 @@ Prefab:
         type: 2}
       propertyPath: m_onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1796239098}
     - target: {fileID: 114600434190354292, guid: e3123444533d6ba47af670712d7461f9,
         type: 2}
       propertyPath: m_onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -27613,6 +27618,64 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 629342028}
   m_Mesh: {fileID: 4300644, guid: defec0c6b658a274bbe96401305f7914, type: 3}
+--- !u!1 &630373221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 630373223}
+  - component: {fileID: 630373222}
+  m_Layer: 0
+  m_Name: End Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &630373222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 630373221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76d42f08cd6673b4ca810c74237c88c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setActive: 1
+  m_subMessage: Zone6 Complete
+  m_event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 590407360}
+        m_MethodName: StartLoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: HUB
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!4 &630373223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 630373221}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.06, y: 21.07, z: -0.33}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &633233011
 Prefab:
   m_ObjectHideFlags: 0
@@ -54315,7 +54378,6 @@ GameObject:
   - component: {fileID: 1306480567}
   - component: {fileID: 1306480570}
   - component: {fileID: 1306480571}
-  - component: {fileID: 1306480572}
   m_Layer: 0
   m_Name: Zone (6)
   m_TagString: Untagged
@@ -54421,17 +54483,6 @@ MonoBehaviour:
   m_event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1306480565}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 590407360}
         m_MethodName: StartTeleport
         m_Mode: 2
@@ -54442,35 +54493,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1306480572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1306480565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76d42f08cd6673b4ca810c74237c88c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  setActive: 0
-  m_subMessage: Zone6 Complete
-  m_event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 590407360}
-        m_MethodName: StartLoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Temp
-          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -58083,17 +58105,6 @@ MonoBehaviour:
   m_event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1386246095}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 590407360}
         m_MethodName: StartTeleport
         m_Mode: 2
@@ -62025,6 +62036,10 @@ Prefab:
         type: 2}
       propertyPath: m_onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213865744956184, guid: dfe640a43666fd24db1a3024a34d3b12, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe640a43666fd24db1a3024a34d3b12, type: 2}
@@ -66978,17 +66993,6 @@ MonoBehaviour:
   m_event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1587064411}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 590407360}
         m_MethodName: StartTeleport
         m_Mode: 2
@@ -68517,17 +68521,6 @@ MonoBehaviour:
   m_event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1628988552}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 590407360}
         m_MethodName: StartTeleport
         m_Mode: 2
@@ -72059,17 +72052,6 @@ MonoBehaviour:
   m_event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1706374699}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 590407360}
         m_MethodName: StartTeleport
         m_Mode: 2

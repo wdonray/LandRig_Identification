@@ -6,13 +6,16 @@ using Valve.VR.InteractionSystem;
 
 public class ScoreManager : MonoBehaviour
 {
-    public int Score, TargetScore;
+    [SerializeField] private int _score;
+    private int _targetScore;
     public string Message;
     private Mediator.Subscriptions _subscriptions;
     private Callback _incrementScoreCallback;
 
     private void Awake()
     {
+        print(gameObject.name + " turned on");
+        _targetScore = transform.childCount;
         _subscriptions = new Mediator.Subscriptions();
         _incrementScoreCallback += IncrementScore;
         _subscriptions.Subscribe(gameObject.name, _incrementScoreCallback);
@@ -25,7 +28,7 @@ public class ScoreManager : MonoBehaviour
     private IEnumerator Start()
     {
         ResetScore();
-        yield return new WaitUntil(() => GetScore() >= TargetScore);
+        yield return new WaitUntil(CheckScore);
         Mediator.instance.NotifySubscribers(Message, new Packet());
     }
 
@@ -35,7 +38,7 @@ public class ScoreManager : MonoBehaviour
     /// <returns></returns>
     public int GetScore()
     {
-        return Score;
+        return _score;
     }
 
     /// <summary>
@@ -45,7 +48,7 @@ public class ScoreManager : MonoBehaviour
     /// <returns></returns>
     public int SetScore(int value)
     {
-        return Score = value;
+        return _score = value;
     }
 
     /// <summary>
@@ -61,12 +64,27 @@ public class ScoreManager : MonoBehaviour
     /// </summary>
     public void IncrementScore()
     {
-        Score++;
+        _score++;
     }
 
     public void IncrementScore(Packet emptyPacket)
     {
-        Score++;
+        print("Score Incremented");
+        //Correct Object
+        //TODO: Play Audio Here
+        _score++;
+    }
+
+    public bool CheckScore()
+    {
+        if (GetScore() >= _targetScore)
+        {
+           print("TargetScore Reached");
+            //Completed
+            //TODO: Play Audio Here
+            return true;
+        }
+        return false;
     }
 
     private void OnDestroy()

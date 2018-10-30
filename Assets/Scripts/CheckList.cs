@@ -89,8 +89,13 @@ public class CheckList : MonoBehaviour
         {
             yield return null;
             _countDown -= Time.deltaTime;
-            CountdownText.text = "Great Job, Next Area in: " + _countDown.ToString("0");
+
+            CountdownText.text = _index == Zones.Count
+                ? "<color=blue>Congratulations</color>, test is complete. \n Going to waiting room in: \n" +
+                  _countDown.ToString("0")
+                : "Great Job, Next Area in: \n" + _countDown.ToString("0");
         }
-        CreateToggles();
+        if (_index != Zones.Count)
+            CreateToggles();
     }
 }

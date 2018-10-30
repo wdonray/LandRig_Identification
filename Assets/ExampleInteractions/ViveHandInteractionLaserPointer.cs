@@ -31,42 +31,42 @@ public class ViveHandInteractionLaserPointer : MonoBehaviour
     void Update()
     {
         #region original lazer
-        if (m_controllerConnected)
-        {
-            if (CheckObjectHit())
-            {
-                if (CheckForInteractableObject(m_targetObject))
-                {
-                    if (CheckInput())
-                    {
-                        OnObjectInteract();
-                    }
-                }
-            }
-        }
+        //if (m_controllerConnected)
+        //{
+        //    if (CheckObjectHit())
+        //    {
+        //        if (CheckForInteractableObject(m_targetObject))
+        //        {
+        //            if (CheckInput())
+        //            {
+        //                OnObjectInteract();
+        //            }
+        //        }
+        //    }
+        //}
 
 
         //UpdateLaser();
         #endregion
 
 
-        //if (m_controllerConnected)
-        //{
-        //    if (CheckLongInput())           // We are holding down the trigger
-        //    {
-        //        CheckObjectHit();
-        //    }
+        if (m_controllerConnected)
+        {
+            if (CheckLongInput())           // We are holding down the trigger
+            {
+                CheckObjectHit();
+            }
 
-        //    else if (CheckOffInput())   // We have let go of the trigger
-        //    {
-        //        if (CheckForInteractableObject(m_targetObject))
-        //        {
-        //            OnObjectInteract();
-        //        }
-        //    }
-        //}
+            else if (CheckOffInput())   // We have let go of the trigger
+            {
+                if (CheckForInteractableObject(m_targetObject))
+                {
+                    OnObjectInteract();
+                }
+            }
+        }
 
-        bool[] extraLazerConditions = { true };
+        bool[] extraLazerConditions = { CheckLongInput() };
         UpdateLaser(extraLazerConditions);
     }
 
@@ -108,9 +108,10 @@ public class ViveHandInteractionLaserPointer : MonoBehaviour
 
 
     // ---------- ---------- ---------- ---------- ----------
-    public InteractableObject CheckForInteractableObject(GameObject go)
+    public bool CheckForInteractableObject(GameObject go)
     {
-        return go.GetComponent<InteractableObject>();
+        var io = go.GetComponent<InteractableObject>();
+        return io != null;
     }
 
 

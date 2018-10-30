@@ -69,7 +69,7 @@ public class ForceTeleport : MonoBehaviour
     public IEnumerator LoadScene(string scene)
     {
         yield return new WaitForSeconds(delayTime);
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadSceneAsync(scene);
     }
 
 

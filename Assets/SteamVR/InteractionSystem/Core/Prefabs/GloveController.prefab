@@ -35,6 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4667711416018326}
   - component: {fileID: 95780151521243808}
+  - component: {fileID: 114367130097324008}
   m_Layer: 0
   m_Name: Glove(Right)
   m_TagString: Untagged
@@ -719,8 +720,8 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1051362121111954}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 764efd512043dc8488180da61ef6f57d, type: 3}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 72a3d5fd615ef7f4eb55c6a6b40b5167, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3cfaccf29907cc545a5692341ced6d76, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -751,6 +752,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114367130097324008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1051362121111954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4074deeb9e817944d8f98aa07dabb2b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_linearMapping: {fileID: 0}
 --- !u!114 &114726468034000078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -779,7 +792,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 72a3d5fd615ef7f4eb55c6a6b40b5167, type: 3}
+  - {fileID: 2100000, guid: 4727a7642b7dc964f9f7cfa326c9cdb1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

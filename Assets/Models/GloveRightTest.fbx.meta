@@ -57,7 +57,12 @@ ModelImporter:
     7400006: Armature|Idle->Point
     9500000: //RootNode
     13700000: Mesh
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leather_Glove_black
+    second: {fileID: 2100000, guid: 4727a7642b7dc964f9f7cfa326c9cdb1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

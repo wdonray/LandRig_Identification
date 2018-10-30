@@ -11,6 +11,7 @@ public class ScoreManager : MonoBehaviour
     public string Message;
     private Mediator.Subscriptions _subscriptions;
     public Callback IncrementScoreCallback;
+    public AudioSource ItemFoundAudio;
 
     private void Awake()
     {
@@ -71,7 +72,7 @@ public class ScoreManager : MonoBehaviour
     {
         print("Score Incremented");
         //Correct Object
-        //TODO: Play Audio Here
+        ItemFoundAudio.Play();
         _score++;
     }
 

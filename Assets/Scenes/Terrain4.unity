@@ -33360,6 +33360,16 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: controllerPrefab
+      value: 
+      objectReference: {fileID: 1559647372441924, guid: 8be38b06c7248524892153abcbf4eb9e,
+        type: 2}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: controllerPrefab
+      value: 
+      objectReference: {fileID: 1559647372441924, guid: 3639c6c77719914489b9f727a3824788,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 114000011983135080, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
@@ -33401,7 +33411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blindfold: {fileID: 970570724}
   fadeTime: 2
-  delayTime: 10
+  delayTime: 3
   objectRef: {fileID: 0}
 --- !u!20 &590407361 stripped
 Camera:

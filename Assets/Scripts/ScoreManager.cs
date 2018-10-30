@@ -10,15 +10,15 @@ public class ScoreManager : MonoBehaviour
     private int _targetScore;
     public string Message;
     private Mediator.Subscriptions _subscriptions;
-    private Callback _incrementScoreCallback;
+    public Callback IncrementScoreCallback;
 
     private void Awake()
     {
         print(gameObject.name + " turned on");
         _targetScore = transform.childCount;
         _subscriptions = new Mediator.Subscriptions();
-        _incrementScoreCallback += IncrementScore;
-        _subscriptions.Subscribe(gameObject.name, _incrementScoreCallback);
+        IncrementScoreCallback += IncrementScore;
+        _subscriptions.Subscribe(gameObject.name, IncrementScoreCallback);
     }
 
     /// <summary>

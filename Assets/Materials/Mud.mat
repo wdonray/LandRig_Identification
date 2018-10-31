@@ -76,10 +76,10 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.509434, g: 0.31987715, b: 0, a: 0.5}
+    - _BaseColor: {r: 0.103773594, g: 0.06545719, b: 0, a: 0.5}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ReflectionColor: {r: 1, g: 0.703586, b: 0.15566039, a: 0.5}
+    - _ReflectionColor: {r: 0.3962264, g: 0.25616497, b: 0, a: 0.5}
     - _SpecularColor: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 1}
     - _WaterColor: {r: 0, g: 0, b: 0, a: 0.5}
     - world_light_dir: {r: 0, g: 1, b: 0.8, a: 0}

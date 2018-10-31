@@ -58,6 +58,6 @@ public class MainMenu : MonoBehaviour
             _countDown--;
             CountdownText.text = _countDown.ToString();
         }
-        SceneManager.LoadScene(MainScene);
+        SceneManager.LoadSceneAsync(MainScene);
     }
 }

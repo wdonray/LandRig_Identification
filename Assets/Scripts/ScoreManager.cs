@@ -70,8 +70,8 @@ public class ScoreManager : MonoBehaviour
 
     public void IncrementScore(Packet emptyPacket)
     {
-        print("Score Incremented");
         //Correct Object
+        print("Score Incremented");
         ItemFoundAudio.Play();
         _score++;
     }
@@ -80,9 +80,8 @@ public class ScoreManager : MonoBehaviour
     {
         if (GetScore() >= _targetScore)
         {
-           print("TargetScore Reached");
             //Completed
-            //TODO: Play Audio Here
+            print(gameObject.name + " :TargetScore Reached");
             return true;
         }
         return false;

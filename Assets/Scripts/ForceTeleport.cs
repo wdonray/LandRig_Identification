@@ -54,6 +54,17 @@ public class ForceTeleport : MonoBehaviour
         objectRef.transform.rotation = pos.rotation;
     }
 
+    public void StartNextZone(Transform pos)
+    {
+        StartCoroutine(NextZone(pos));
+    }
+
+    private IEnumerator NextZone(Transform pos)
+    {
+        yield return new WaitForSeconds(delayTime);
+        pos.gameObject.SetActive(true);
+    }
+
     /// <summary>
     ///     Used to call via the messenger
     /// </summary>

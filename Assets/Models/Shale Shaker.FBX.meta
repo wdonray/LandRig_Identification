@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 962d30ed9d73e9a49bda8ae7f56f0a9c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bay
+    100002: Cable001
+    100004: Cable002
+    100006: Chassis
+    100008: Compressor_01
+    100010: Compressor_02
+    100012: Cylinder003
+    100014: Cylinder004
+    100016: Cylinder005
+    100018: Cylinder006
+    100020: Ductibility duct
+    100022: FuseBox
+    100024: Holder
+    100026: Line002
+    100028: Line003
+    100030: Line016
+    100032: Line017
+    100034: Object006
+    100036: Object008
+    100038: Object009
+    100040: Object010
+    100042: Piston001
+    100044: Piston002
+    100046: Piston003
+    100048: Piston004
+    100050: Platform
+    100052: Point003
+    100054: Point003 1
+    100056: Point004
+    100058: Point004 1
+    100060: Point005
+    100062: Point006
+    100064: Point007
+    100066: Point008
+    100068: Point009
+    100070: Point010
+    100072: Point011
+    100074: Point012
+    100076: Point013
+    100078: Point014
+    100080: Point015
+    100082: Point016
+    100084: Point017
+    100086: Point018
+    100088: //RootNode
+    100090: Spring001
+    100092: Spring002
+    100094: Spring003
+    100096: Spring004
+    400000: Bay
+    400002: Cable001
+    400004: Cable002
+    400006: Chassis
+    400008: Compressor_01
+    400010: Compressor_02
+    400012: Cylinder003
+    400014: Cylinder004
+    400016: Cylinder005
+    400018: Cylinder006
+    400020: Ductibility duct
+    400022: FuseBox
+    400024: Holder
+    400026: Line002
+    400028: Line003
+    400030: Line016
+    400032: Line017
+    400034: Object006
+    400036: Object008
+    400038: Object009
+    400040: Object010
+    400042: Piston001
+    400044: Piston002
+    400046: Piston003
+    400048: Piston004
+    400050: Platform
+    400052: Point003
+    400054: Point003 1
+    400056: Point004
+    400058: Point004 1
+    400060: Point005
+    400062: Point006
+    400064: Point007
+    400066: Point008
+    400068: Point009
+    400070: Point010
+    400072: Point011
+    400074: Point012
+    400076: Point013
+    400078: Point014
+    400080: Point015
+    400082: Point016
+    400084: Point017
+    400086: Point018
+    400088: //RootNode
+    400090: Spring001
+    400092: Spring002
+    400094: Spring003
+    400096: Spring004
+    2100000: Aluminium
+    2100002: Rubber
+    2100004: Paint Blue
+    2100006: Paint Green
+    2100008: Chrome
+    2100010: Paint White
+    2100012: Paint Red
+    2100014: Paint Black
+    2300000: Bay
+    2300002: Cable001
+    2300004: Cable002
+    2300006: Chassis
+    2300008: Cylinder003
+    2300010: Cylinder004
+    2300012: Cylinder005
+    2300014: Cylinder006
+    2300016: Ductibility duct
+    2300018: FuseBox
+    2300020: Holder
+    2300022: Object006
+    2300024: Object008
+    2300026: Object009
+    2300028: Object010
+    2300030: Piston001
+    2300032: Piston002
+    2300034: Piston003
+    2300036: Piston004
+    2300038: Platform
+    2300040: Spring001
+    2300042: Spring002
+    2300044: Spring003
+    2300046: Spring004
+    3300000: Bay
+    3300002: Cable001
+    3300004: Cable002
+    3300006: Chassis
+    3300008: Cylinder003
+    3300010: Cylinder004
+    3300012: Cylinder005
+    3300014: Cylinder006
+    3300016: Ductibility duct
+    3300018: FuseBox
+    3300020: Holder
+    3300022: Object006
+    3300024: Object008
+    3300026: Object009
+    3300028: Object010
+    3300030: Piston001
+    3300032: Piston002
+    3300034: Piston003
+    3300036: Piston004
+    3300038: Platform
+    3300040: Spring001
+    3300042: Spring002
+    3300044: Spring003
+    3300046: Spring004
+    4300000: Spring001
+    4300002: Spring002
+    4300004: Cable001
+    4300006: Spring004
+    4300008: Spring003
+    4300010: Chassis
+    4300012: Ductibility duct
+    4300014: FuseBox
+    4300016: Bay
+    4300018: Cylinder004
+    4300020: Object008
+    4300022: Object006
+    4300024: Cylinder003
+    4300026: Cylinder005
+    4300028: Object009
+    4300030: Object010
+    4300032: Cylinder006
+    4300034: Holder
+    4300036: Platform
+    4300038: Piston002
+    4300040: Piston004
+    4300042: Piston003
+    4300044: Piston001
+    4300046: Cable002
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

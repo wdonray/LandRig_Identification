@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
     public Button StartButton, ExitButton;
     private Mediator.Subscriptions _subscriptions;
     private Callback _startGameCallback, _exitGameCallback;
-    // Use this for initialization
+    private AsyncOperation _asyncSceneLoad;
 
     void Awake()
     {
@@ -30,6 +30,12 @@ public class MainMenu : MonoBehaviour
         ExitButton.onClick.AddListener(Notify);
     }
 
+    void Start()
+    {
+        //_asyncSceneLoad = SceneManager.LoadSceneAsync(MainScene);
+        //_asyncSceneLoad.allowSceneActivation = false;
+    }
+
     public void Notify()
     {
         Mediator.instance.NotifySubscribers(EventSystem.current.currentSelectedGameObject.name, new Packet());
@@ -37,7 +43,7 @@ public class MainMenu : MonoBehaviour
 
     private void StartGame(Packet emptyPacket)
     {
-        StartCoroutine(startGameDelay(5));
+        StartCoroutine(StartGameDelay(5));
     }
 
     private void ExitGame(Packet emptyPacket)
@@ -45,7 +51,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    private IEnumerator startGameDelay(int time)
+    private IEnumerator StartGameDelay(int time)
     {
         _countDown = time;
         StartButton.gameObject.SetActive(false);
@@ -58,6 +64,13 @@ public class MainMenu : MonoBehaviour
             _countDown--;
             CountdownText.text = _countDown.ToString();
         }
+
+        //_asyncSceneLoad.allowSceneActivation = true;
         SceneManager.LoadSceneAsync(MainScene);
+    }
+
+    public void OnDestroy()
+    {
+        _subscriptions.UnsubscribeAll();
     }
 }

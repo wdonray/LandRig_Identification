@@ -181,7 +181,42 @@ ModelImporter:
     4300042: Spring002
     4300044: Spring003
     4300046: Spring004
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Aluminium
+    second: {fileID: 2100000, guid: 92829999e3877fd489265008a137c487, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome
+    second: {fileID: 2100000, guid: 993bf646cb75b014db860062f0b0f94f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_Black
+    second: {fileID: 2100000, guid: d26c8cc900966924997fcdd2e4827724, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_Blue
+    second: {fileID: 2100000, guid: a1ee1779340f1f54e9118e48df1ee4a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_Green
+    second: {fileID: 2100000, guid: e975c935fd5875943acf99b49c503598, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_Red
+    second: {fileID: 2100000, guid: 2512e4d4b8d998f41a805b44ba48e8cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_White
+    second: {fileID: 2100000, guid: 178ed90b500fb0c4cb40ca1201a9715b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

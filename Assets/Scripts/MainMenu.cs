@@ -32,8 +32,8 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
-        //_asyncSceneLoad = SceneManager.LoadSceneAsync(MainScene);
-        //_asyncSceneLoad.allowSceneActivation = false;
+        _asyncSceneLoad = SceneManager.LoadSceneAsync(MainScene);
+        _asyncSceneLoad.allowSceneActivation = false;
     }
 
     public void Notify()
@@ -65,8 +65,7 @@ public class MainMenu : MonoBehaviour
             CountdownText.text = _countDown.ToString();
         }
 
-        //_asyncSceneLoad.allowSceneActivation = true;
-        SceneManager.LoadSceneAsync(MainScene);
+        _asyncSceneLoad.allowSceneActivation = true;
     }
 
     public void OnDestroy()

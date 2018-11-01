@@ -9,15 +9,26 @@ public class QuickSubscribe : MonoBehaviour
     private Mouledoux.Components.Mediator.Subscriptions m_subscriptions = new Mouledoux.Components.Mediator.Subscriptions();
     private Mouledoux.Callback.Callback m_subCallback;
 
+    public bool isZone;
     public string m_subMessage;
     public UnityEngine.Events.UnityEvent m_event;
 
-	void Awake ()
+    void Awake()
     {
         m_subCallback = InvokeUnityEvent;
+        if (isZone)
+        {
+            var message = GetComponent<ScoreManager>().Message;
+            var subString = message.Substring(4, 1);
+            int sum;
+            if (int.TryParse(subString, out sum))
+            {
+                m_subMessage = "Zone" + (sum - 1) + " Complete";
+            }
+        }
         m_subscriptions.Subscribe(m_subMessage, m_subCallback);
         gameObject.SetActive(setActive);
-	}
+    }
 
     private void InvokeUnityEvent(Mouledoux.Callback.Packet emptyPacket)
     {
